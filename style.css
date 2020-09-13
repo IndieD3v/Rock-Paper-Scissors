@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  section {
+    height: 100vh;
+    font-family: monospace;
+  }
+
+
+  .col button{
+    margin-top: 50px;
+    margin-left: 11pc;
+    height: 50px;
+    width: 130px;
+    border-radius: 10px;
+    background: none;
+    border: none;
+  
+    font-size: 20px;
+    color: white;
+    font-family: monospace;
+    background: black;
+    cursor: pointer;
+    
+  }
+  
+  .score {
+    color: black;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .score h2 {
+    font-size: 30px;
+  }
+  .score p {
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+  }
+  
+  .intro {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+  }
+  
+  .intro h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .intro button{
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background: none;
+    border: none;
+  
+    font-size: 20px;
+    color: white;
+    font-family: monospace;
+    background: black;
+    cursor: pointer;
+  }
+
+  .match {
+    margin-top: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+  }
+  .winner {
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .hands,
+  .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .options button{
+    margin-top: 50px;
+    height: 50px;
+    width: 130px;
+    border-radius: 10px;
+    background: none;
+    border: none;
+  
+    font-size: 20px;
+    color: white;
+    font-family: monospace;
+    background: black;
+    cursor: pointer;
+    
+  }
+  
+  .player-hand {
+    transform: rotateY(180deg);
+  }
+  
+  div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+  }
